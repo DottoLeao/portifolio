@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail, Heart, Code2 } from "lucide-react";
 const links = [
   { icon: Github, href: "https://github.com", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:contato@email.com", label: "Email" },
+  { icon: Mail, href: "mailto:dottoleao@gmail.com", label: "Email" },
 ];
 
 export function Footer() {

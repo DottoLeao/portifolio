@@ -52,7 +52,7 @@ export function Hero() {
             {[
               { icon: Github, href: "https://github.com/DottoLeao", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/lorenzo-le%C3%A3o-dotto/", label: "LinkedIn" },
-              { icon: Mail, href: "dottoleao@gmail.com", label: "Email" },
+              { icon: Mail, href: "mailto:dottoleao@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
