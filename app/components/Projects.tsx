@@ -22,50 +22,10 @@ interface Project {
   order: number;
 }
 
-const fallbackProjects: Project[] = [
-  {
-    _id: "fallback-1",
-    title: "Torre de Controle - Sistema de Monitoramento",
-    description: "Dashboard de inteligência operacional para monitoramento em tempo real",
-    problem: "Gestores precisavam de uma visão unificada de múltiplos sistemas e KPIs, com alertas proativos e análise de tendências.",
-    solution: "Pipeline de dados em Python para ETL e análise preditiva, frontend em React com visualizações interativas e Supabase como backend serverless.",
-    results: ["Redução de 40% no tempo de resposta a incidentes", "Automação de 15+ relatórios manuais", "Dashboard com atualização em tempo real"],
-    tech: ["React", "TypeScript", "Python", "Supabase", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://demo.com",
-    featured: true,
-    order: 1,
-  },
-  {
-    _id: "fallback-2",
-    title: "Analytics Platform - Data Visualization",
-    description: "Plataforma de análise de dados com visualizações customizáveis",
-    problem: "Equipe de dados gastava horas criando relatórios estáticos que ficavam desatualizados rapidamente.",
-    solution: "Aplicação Next.js com integração direta ao banco de dados, charts interativos com D3.js e exportação automatizada.",
-    results: ["Criação de dashboards 5x mais rápida", "Integração com 8 fontes de dados", "Sistema de alertas inteligentes"],
-    tech: ["Next.js", "Node.js", "PostgreSQL", "D3.js", "Docker"],
-    github: "https://github.com",
-    live: "https://demo.com",
-    featured: true,
-    order: 2,
-  },
-  {
-    _id: "fallback-3",
-    title: "Workflow Automation Engine",
-    description: "Motor de automação de processos com interface drag-and-drop",
-    problem: "Processos manuais repetitivos consumiam tempo da equipe e introduziam erros humanos.",
-    solution: "Backend em Python com orquestração de tarefas, frontend Vue.js com editor visual de fluxos e integrações via API.",
-    results: ["80% de redução em tarefas manuais", "Zero downtime em 6 meses", "ROI positivo em 3 meses"],
-    tech: ["Python", "FastAPI", "Vue.js", "Redis", "AWS Lambda"],
-    github: "https://github.com",
-    live: "https://demo.com",
-    featured: true,
-    order: 3,
-  },
-];
-
 export function Projects({ projects }: { projects?: Project[] }) {
-  const data = projects && projects.length > 0 ? projects : fallbackProjects;
+  const data = projects ?? [];
+
+  if (data.length === 0) return null;
 
   return (
     <section id="projects" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6">
