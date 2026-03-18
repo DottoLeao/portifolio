@@ -68,24 +68,6 @@ export function Hero() {
               </motion.a>
             ))}
           </motion.div>
-
-          <motion.div
-            className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 font-mono text-[10px] sm:text-xs text-zinc-500 dark:text-zinc-500 px-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-          >
-            {["React", "Next.js", "TypeScript", "Node.js", "Python", "SQL", "Supabase", "Figma"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 hover:border-[#00ff88] dark:hover:border-[#00ff88] hover:text-[#00ff88] transition-colors cursor-default"
-                >
-                  {tech}
-                </span>
-              )
-            )}
-          </motion.div>
         </motion.div>
       </div>
 

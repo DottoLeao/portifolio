@@ -1,6 +1,6 @@
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
-import { Toolbox } from "../components/Toolbox";
+import { SkillsOrbit } from "../components/SkillsOrbit";
 import { DataVisualization } from "../components/DataVisualization";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
@@ -29,7 +29,7 @@ export default async function Home() {
         <Hero />
         <Projects projects={projects} />
         <DataVisualization />
-        <Toolbox />
+        <SkillsOrbit />
         <CTA />
         <Footer />
       </div>
