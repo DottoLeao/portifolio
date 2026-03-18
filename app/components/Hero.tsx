@@ -14,7 +14,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.p
-            className="text-[#00ff88] dark:text-[#00ff88] font-mono text-xs sm:text-sm md:text-base mb-3 sm:mb-4 tracking-wider"
+            className="text-[#00ff88] font-mono text-xs sm:text-sm md:text-base mb-3 sm:mb-4 tracking-wider"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -22,7 +22,7 @@ export function Hero() {
             FULL STACK DEVELOPER & DATA SCIENTIST
           </motion.p>
           
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-zinc-900 dark:text-white leading-tight mb-4 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6">
             Construindo aplicações onde o{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ff88] to-[#00d4ff]">
               design
@@ -34,7 +34,7 @@ export function Hero() {
           </h1>
           
           <motion.p
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-10 px-2"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-10 px-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -59,12 +59,12 @@ export function Hero() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 sm:p-3 rounded-full border border-zinc-300 dark:border-zinc-700 hover:border-[#00ff88] dark:hover:border-[#00ff88] hover:bg-[#00ff88]/10 transition-all duration-300 group active:scale-95"
+                className="p-2.5 sm:p-3 rounded-full border border-zinc-700 hover:border-[#00ff88] hover:bg-[#00ff88]/10 transition-all duration-300 group active:scale-95"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label={label}
               >
-                <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-600 dark:text-zinc-400 group-hover:text-[#00ff88]" />
+                <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-400 group-hover:text-[#00ff88]" />
               </motion.a>
             ))}
           </motion.div>
@@ -81,7 +81,7 @@ export function Hero() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 dark:text-zinc-600" />
+          <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-600" />
         </motion.div>
       </motion.div>
     </section>

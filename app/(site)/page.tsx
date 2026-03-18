@@ -21,7 +21,7 @@ export default async function Home() {
 
   return (
     <main className="relative min-h-screen">
-      <div className="fixed inset-0 z-0 bg-white dark:bg-black">
+      <div className="fixed inset-0 z-0 bg-black">
         <ParticleNetwork />
       </div>
 

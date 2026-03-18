@@ -75,10 +75,10 @@ export function SkillsOrbit() {
           <p className="text-[#00ff88] font-mono text-xs sm:text-sm mb-2 sm:mb-3">
             SKILL ORBIT
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
             Meu Universo Tech
           </h2>
-          <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-zinc-400 max-w-xl mx-auto">
             As tecnologias que orbitam meu dia a dia — do front ao deploy.
           </p>
         </motion.div>
@@ -100,7 +100,7 @@ export function SkillsOrbit() {
             {/* Center core with glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
               <div className="absolute -inset-4 rounded-full bg-[#00ff88]/10 blur-xl animate-pulse" />
-              <div className="relative w-16 h-16 rounded-full bg-white/5 dark:bg-zinc-800/80 border border-[#00ff88]/30 flex items-center justify-center backdrop-blur-sm">
+              <div className="relative w-16 h-16 rounded-full bg-zinc-800/80 border border-[#00ff88]/30 flex items-center justify-center backdrop-blur-sm">
                 <span className="text-[#00ff88] font-mono font-bold text-lg select-none">
                   &lt;/&gt;
                 </span>
@@ -187,7 +187,7 @@ export function SkillsOrbit() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800"
+              className="p-4 rounded-xl bg-zinc-900 border border-zinc-800"
             >
               <h3
                 className="font-mono text-[10px] mb-3 uppercase tracking-widest"
@@ -232,13 +232,13 @@ export function SkillsOrbit() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 whileHover={{ y: -4, scale: 1.02 }}
-                className="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-[#00ff88]/50 dark:hover:border-[#00ff88]/50 transition-all duration-300 group"
+                className="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-[#00ff88]/50 transition-all duration-300 group"
               >
                 <principle.icon
                   className="w-6 h-6 sm:w-8 sm:h-8 mb-2 sm:mb-4 transition-colors duration-300"
                   style={{ color: principle.color }}
                 />
-                <p className="font-medium text-zinc-900 dark:text-white text-xs sm:text-sm leading-tight">
+                <p className="font-medium text-white text-xs sm:text-sm leading-tight">
                   {principle.text}
                 </p>
               </motion.div>

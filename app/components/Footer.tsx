@@ -13,7 +13,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 sm:py-12 px-4 sm:px-6 border-t border-zinc-100/50 dark:border-zinc-800/50">
+    <footer className="py-8 sm:py-12 px-4 sm:px-6 border-t border-zinc-800/50">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center gap-5 sm:gap-6 md:flex-row md:justify-between">
           {/* Logo / Name */}
@@ -24,7 +24,7 @@ export function Footer() {
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#00ff88] to-[#00d4ff] flex items-center justify-center">
               <Code2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-black" />
             </div>
-            <span className="font-bold text-sm sm:text-base text-zinc-900 dark:text-white">
+            <span className="font-bold text-sm sm:text-base text-white">
               The Data-Driven Architect
             </span>
           </motion.div>
@@ -48,7 +48,7 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-xs sm:text-sm text-zinc-400 dark:text-zinc-500 flex items-center gap-1">
+          <p className="text-xs sm:text-sm text-zinc-500 flex items-center gap-1">
             <span>Feito com</span>
             <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-500 inline animate-pulse" />
             <span>© {currentYear}</span>
@@ -56,8 +56,8 @@ export function Footer() {
         </div>
 
         {/* Tech Stack */}
-        <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-zinc-100 dark:border-zinc-800 text-center">
-          <p className="text-[10px] sm:text-xs text-zinc-400 dark:text-zinc-600 font-mono">
+        <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-zinc-800 text-center">
+          <p className="text-[10px] sm:text-xs text-zinc-600 font-mono">
             Built with Next.js • TypeScript • Tailwind CSS • Framer Motion
           </p>
         </div>
