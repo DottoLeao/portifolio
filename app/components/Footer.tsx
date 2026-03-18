@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Heart, Code2 } from "lucide-react";
 
 const links = [
   { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/lorenzo-le%C3%A3o-dotto/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:dottoleao@gmail.com", label: "Email" },
 ];
 

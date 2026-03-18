@@ -56,7 +56,7 @@ export function CTA() {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/lorenzo-le%C3%A3o-dotto/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-semibold text-sm sm:text-base md:text-lg hover:border-[#00ff88] hover:text-[#00ff88] transition-all duration-300 active:border-[#00ff88] active:text-[#00ff88]"
