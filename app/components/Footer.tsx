@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Heart, Code2 } from "lucide-react";
 
 const links = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
+  { icon: Github, href: "https://github.com/DottoLeao", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/lorenzo-le%C3%A3o-dotto/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:dottoleao@gmail.com", label: "Email" },
 ];

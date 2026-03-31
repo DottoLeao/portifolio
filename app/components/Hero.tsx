@@ -34,13 +34,23 @@ export function Hero() {
           </h1>
           
           <motion.p
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-10 px-2"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-300 max-w-2xl mx-auto mb-3 sm:mb-4 px-2 font-medium"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            Transformando fluxos complexos em interfaces intuitivas. 
-            Do backend ao pixel perfeito, da análise de dados à experiência do usuário.
+            Transformo dados complexos em ferramentas simples que ajudam
+            empresas a tomar decisões melhores e lucrar mais.
+          </motion.p>
+
+          <motion.p
+            className="text-xs sm:text-sm md:text-base text-zinc-500 max-w-xl mx-auto mb-6 sm:mb-8 md:mb-10 px-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            Do conceito ao deploy — interfaces intuitivas, sistemas robustos e
+            inteligência de dados para o seu negócio.
           </motion.p>
 
           <motion.div

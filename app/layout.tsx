@@ -13,32 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Data-Driven Architect | Full Stack Developer & Data Scientist",
+  title: "Lorenzo Dotto | Desenvolvedor Full Stack & Data Scientist",
   description:
-    "Construindo aplicações onde o design encontra a inteligência de dados. Transformando fluxos complexos em interfaces intuitivas.",
+    "Transformo dados complexos em ferramentas simples que ajudam empresas a tomar decisões melhores e lucrar mais. Sistemas sob medida, interfaces intuitivas e inteligência de dados.",
   keywords: [
-    "Full Stack Developer",
+    "Desenvolvedor Full Stack",
     "Data Scientist",
+    "Sistemas sob medida",
+    "Inteligência de dados",
     "React",
     "Next.js",
     "TypeScript",
     "Python",
-    "Node.js",
-    "SQL",
   ],
-  authors: [{ name: "Data-Driven Architect" }],
+  authors: [{ name: "Lorenzo Leão Dotto" }],
   openGraph: {
     type: "website",
-    title: "The Data-Driven Architect | Full Stack Developer & Data Scientist",
+    title: "Lorenzo Dotto | Desenvolvedor Full Stack & Data Scientist",
     description:
-      "Construindo aplicações onde o design encontra a inteligência de dados.",
-    siteName: "The Data-Driven Architect",
+      "Transformo dados complexos em ferramentas simples que ajudam empresas a tomar decisões melhores e lucrar mais.",
+    siteName: "Lorenzo Dotto",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Data-Driven Architect",
+    title: "Lorenzo Dotto | Full Stack & Data Scientist",
     description:
-      "Construindo aplicações onde o design encontra a inteligência de dados.",
+      "Transformo dados complexos em ferramentas simples que ajudam empresas a tomar decisões melhores e lucrar mais.",
   },
 };
 

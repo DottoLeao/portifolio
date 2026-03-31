@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Github, ArrowUpRight, Play } from "lucide-react";
 import Image from "next/image";
 import { urlFor } from "@/lib/sanity/image";
 import type { SanityImageSource } from "@sanity/image-url";
@@ -138,29 +138,31 @@ export function Projects({ projects }: { projects?: Project[] }) {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-4 sm:gap-6">
-                    {project.github && (
-                      <motion.a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-zinc-400 hover:text-[#00ff88] transition-colors active:text-[#00ff88]"
-                        whileHover={{ x: 3 }}
-                      >
-                        <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                        <span>Código</span>
-                      </motion.a>
-                    )}
+                  <div className="flex items-center gap-3 sm:gap-4">
                     {project.live && (
                       <motion.a
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-zinc-400 hover:text-[#00ff88] transition-colors active:text-[#00ff88]"
-                        whileHover={{ x: 3 }}
+                        className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#00ff88] to-[#00d4ff] text-black font-semibold text-xs sm:text-sm hover:shadow-lg hover:shadow-[#00ff88]/20 transition-shadow"
+                        whileHover={{ scale: 1.03, y: -1 }}
+                        whileTap={{ scale: 0.97 }}
                       >
-                        <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                        <span>Demo</span>
+                        <Play className="w-3.5 h-3.5 fill-current" />
+                        <span>Ver funcionando</span>
+                      </motion.a>
+                    )}
+                    {project.github && (
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-zinc-700 text-xs sm:text-sm text-zinc-400 hover:border-[#00ff88] hover:text-[#00ff88] transition-all"
+                        whileHover={{ scale: 1.03, y: -1 }}
+                        whileTap={{ scale: 0.97 }}
+                      >
+                        <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                        <span>Código</span>
                       </motion.a>
                     )}
                   </div>

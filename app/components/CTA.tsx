@@ -35,7 +35,7 @@ export function CTA() {
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-2">
-            Vamos construir a solução juntos. Do conceito à entrega, com foco em 
+            Vamos construir a solução juntos. Do conceito à entrega, com foco em
             resultados mensuráveis e código de qualidade.
           </p>
 
@@ -56,6 +56,16 @@ export function CTA() {
             </motion.a>
 
             <motion.a
+              href="mailto:dottoleao@gmail.com"
+              className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-zinc-700 text-zinc-300 font-semibold text-sm sm:text-base md:text-lg hover:border-[#00d4ff] hover:text-[#00d4ff] transition-all duration-300 active:border-[#00d4ff] active:text-[#00d4ff]"
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span>Enviar e-mail</span>
+            </motion.a>
+
+            <motion.a
               href="https://www.linkedin.com/in/lorenzo-le%C3%A3o-dotto/"
               target="_blank"
               rel="noopener noreferrer"
@@ -68,15 +78,26 @@ export function CTA() {
             </motion.a>
           </div>
 
-          <motion.p
-            className="mt-6 sm:mt-8 text-xs sm:text-sm text-zinc-500"
+          <motion.div
+            className="mt-8 sm:mt-10 flex flex-col items-center gap-2"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
           >
-            Respondo em até 24 horas
-          </motion.p>
+            <p className="text-xs sm:text-sm text-zinc-500">
+              Prefere e-mail formal?{" "}
+              <a
+                href="mailto:dottoleao@gmail.com"
+                className="text-[#00d4ff] hover:underline"
+              >
+                dottoleao@gmail.com
+              </a>
+            </p>
+            <p className="text-xs sm:text-sm text-zinc-600">
+              Respondo em até 24 horas
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </section>

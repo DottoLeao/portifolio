@@ -6,7 +6,8 @@ import { Code2, Zap, Shield, Target } from "lucide-react";
 
 const ORBITS = [
   {
-    label: "Frontend",
+    label: "Experiência Visual",
+    description: "Interfaces intuitivas que encantam seus clientes",
     color: "#00d4ff",
     radius: 80,
     duration: 28,
@@ -14,7 +15,8 @@ const ORBITS = [
     techs: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
   },
   {
-    label: "Backend",
+    label: "Sistemas Robustos",
+    description: "Aplicações seguras e escaláveis para seu negócio",
     color: "#00ff88",
     radius: 140,
     duration: 38,
@@ -22,7 +24,8 @@ const ORBITS = [
     techs: ["Node.js", "Python", "Express", "APIs"],
   },
   {
-    label: "Data",
+    label: "Inteligência de Dados",
+    description: "Análises e dashboards para decisões mais inteligentes",
     color: "#ffd93d",
     radius: 195,
     duration: 48,
@@ -30,7 +33,8 @@ const ORBITS = [
     techs: ["SQL", "Pandas", "Supabase", "PostgreSQL"],
   },
   {
-    label: "Tools",
+    label: "Produtividade",
+    description: "Entregas rápidas com qualidade e automação",
     color: "#ff6b6b",
     radius: 245,
     duration: 56,
@@ -40,10 +44,10 @@ const ORBITS = [
 ];
 
 const PRINCIPLES = [
-  { icon: Code2, text: "Código limpo não é opcional", color: "#00ff88" },
-  { icon: Zap, text: "Performance é feature", color: "#00d4ff" },
-  { icon: Shield, text: "Testes garantem confiança", color: "#ff6b6b" },
-  { icon: Target, text: "UX guia todas as decisões", color: "#ffd93d" },
+  { icon: Code2, text: "Facilidade para evoluir o projeto no futuro", color: "#00ff88" },
+  { icon: Zap, text: "Sites rápidos que não perdem clientes", color: "#00d4ff" },
+  { icon: Shield, text: "Sistemas estáveis e livres de erros", color: "#ff6b6b" },
+  { icon: Target, text: "Experiência pensada para seu usuário final", color: "#ffd93d" },
 ];
 
 const orbitKeyframes = `
@@ -73,13 +77,13 @@ export function SkillsOrbit() {
           className="mb-10 sm:mb-16 text-center"
         >
           <p className="text-[#00ff88] font-mono text-xs sm:text-sm mb-2 sm:mb-3">
-            SKILL ORBIT
+            ESPECIALIDADES
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
-            Meu Universo Tech
+            Como Entrego Resultados
           </h2>
           <p className="text-sm sm:text-base text-zinc-400 max-w-xl mx-auto">
-            As tecnologias que orbitam meu dia a dia — do front ao deploy.
+            As ferramentas que uso para transformar desafios do seu negócio em soluções reais.
           </p>
         </motion.div>
 
@@ -190,11 +194,14 @@ export function SkillsOrbit() {
               className="p-4 rounded-xl bg-zinc-900 border border-zinc-800"
             >
               <h3
-                className="font-mono text-[10px] mb-3 uppercase tracking-widest"
+                className="font-mono text-[10px] mb-1 uppercase tracking-widest"
                 style={{ color: orbit.color }}
               >
                 {orbit.label}
               </h3>
+              <p className="text-[10px] text-zinc-500 mb-3">
+                {orbit.description}
+              </p>
               <div className="flex flex-wrap gap-1.5">
                 {orbit.techs.map((tech) => (
                   <span
@@ -221,7 +228,7 @@ export function SkillsOrbit() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-[#00ff88] font-mono text-xs sm:text-sm mb-4 sm:mb-6 text-center">
-            NON-NEGOTIABLES
+            MEU COMPROMISSO
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {PRINCIPLES.map((principle, index) => (
